@@ -29,7 +29,7 @@ sourceCursor = sourceConn.cursor()
 targetCursor = targetConn.cursor()
 
 # =================================================================
-# Step[3]. Selecting all Tables you want to copy over to Google Schema
+# Step[3]. Selecting all Tables you want to copy over to Target Schema
 sourceCursor.execute(""" select table_name 
                          From INFORMATION_SCHEMA.COLUMNS 
                          Group BY table_name"""
